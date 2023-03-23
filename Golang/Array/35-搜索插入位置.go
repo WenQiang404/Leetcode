@@ -1,13 +1,15 @@
-/*给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。
+/*
+给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。
 如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
-请必须使用时间复杂度为 O(log n) 的算法*/
+请必须使用时间复杂度为 O(log n) 的算法
+*/
 package main
 
 import (
 	"fmt"
 )
 
-//O(n)
+// O(n)
 func FindIndex(array []int, target int) int {
 	index := 0
 	//若数组中存在target
@@ -25,7 +27,7 @@ func FindIndex(array []int, target int) int {
 
 }
 
-//O(log n)
+// O(log n)
 func search(num []int, target int) int {
 	high := len(num) - 1
 	low := 0
@@ -54,5 +56,5 @@ func search(num []int, target int) int {
 func main() {
 	array := []int{1, 3, 5, 6, 7, 9, 10, 13}
 	fmt.Println(search(array, 11))
-
+	//test the git states
 }
