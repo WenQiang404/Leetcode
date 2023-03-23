@@ -5,10 +5,10 @@ package main
 
 import "fmt"
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+//type ListNode struct {
+//	Val  int
+//	Next *ListNode
+//}
 
 // 获取链表长度
 func getLength(head *ListNode) int {
