@@ -98,6 +98,32 @@ func methodTwo(s, t string) bool {
 	return true
 }
 
+// 方法二的数组解决方法：(something was wrong)
+//func methodTwoArray(s, t string) bool {
+//	//if len(s) != len(t) {
+//	//	return false
+//	//}
+//	numa, _ := strconv.Atoi("a")
+//	num := []int{0}
+//	for i := 0; i < len(s); i++ {
+//		number, _ := strconv.Atoi(s[i : i+1])
+//
+//		num[number-numa] += 1
+//	}
+//	for j := 0; j < len(s); j++ {
+//		number, _ := strconv.Atoi(s[j : j+1])
+//
+//		num[number-numa] -= 1
+//	}
+//	for k := 0; k < len(num); k++ {
+//		if num[k] != 0 {
+//			return false
+//		}
+//	}
+//	return true
+//
+//}
+
 func main() {
 	a := make(map[int]int)
 	b := make(map[int]int)
@@ -106,5 +132,6 @@ func main() {
 	fmt.Println(isAnagram("anagram", "nagaram"))
 	fmt.Println(methodOne("anagram", "nagaram"))
 	fmt.Println(methodTwo("anagram", "nagaram"))
+	//fmt.Println(methodTwoArray("anagram", "nagaram"))
 
 }
